@@ -51,12 +51,13 @@ public class User {
         User user = (User) o;
         return Objects.equals(login, user.login)
                 && Objects.equals(password, user.password)
-                && Objects.equals(age, user.age);
+                && Objects.equals(age, user.age)
+                && Objects.equals(id, user.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(login, password, age);
+        return Objects.hash(login, password, age, id);
     }
 
     @Override

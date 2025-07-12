@@ -25,7 +25,7 @@ public class RegistrationServiceImpl implements RegistrationService {
             throw new RegistrationException("Length of login is too short.");
         }
         if (user.getPassword().length() < MIN_LENGTH) {
-            throw new RegistrationException("Length of login is too short.");
+            throw new RegistrationException("Length of password is too short.");
         }
         if (user.getAge() < MIN_AGE) {
             throw new RegistrationException("Age is too low.");

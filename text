@@ -1,0 +1,6 @@
+
+@BeforeEach or @BeforeAll, what's the difference?
+
+- testy nie działają niezależnie - zawartości listy nie są czyszczone po zakończeniu każdego z testu, a kumulują zapisy,
+@BeforeEach i @AfterEach
+-
